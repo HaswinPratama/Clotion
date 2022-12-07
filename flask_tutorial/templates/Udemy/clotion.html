@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block bodyblock %}
+
+<!--12-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <br><br>
+            <!--form : upload the image-->
+            <h3 class="display-8">Clothes Translation</h3>
+            <p>Upload an image (.jpg, .jpeg, .png). Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <!--upload image form-->
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <input type="file" class="form-control" name="image_name" required>
+                    <input type="submit" value="Upload & Predict" class="btn btn-outline-primary">
+                    <img src="#" class="image-fluid" width="400" alt="">
+                </div>
+            </form>
+        </div>
+
+        <!--div class="input-group"-->
+        <div class="col">
+            <!-- report: prediction image-->
+            <br><br>
+            <!--form : upload the image-->
+            <div class="card">
+                <div class="card-header text-center">
+                    Input
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Virtual Try-on Result</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            
+                    <!--upload image form-->
+                    <!--<form action="#" method="POST" enctype="multipart/form-data">
+                        <div class="input-group">
+                            <input type="file" class="form-control" name="image_name" required>
+                            <input type="submit" value="Upload & Predict" class="btn btn-outline-primary">
+                            <img src="#" class="image-fluid" width="400" alt="">
+                        </div>
+                    </form>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <!-- report: prediction image-->
+            <br><br>
+            <!--form : upload the image-->
+            <div class="card">
+                <div class="card-header text-center">
+                    Output
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Virtual Try-on Result</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
